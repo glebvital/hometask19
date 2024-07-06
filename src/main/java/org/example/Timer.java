@@ -18,7 +18,7 @@ class Timer extends Thread{
             new Exception();
             return;
         }
-        while (i < Integer.parseInt(text.getText())) {
+        while (i <= Integer.parseInt(text.getText())) {
             String sec = String.valueOf(i % 60);
             String min = String.valueOf((i/60) % 60);
             String hour = String.valueOf((i/3600) % 24);

@@ -62,10 +62,11 @@ class TnSW extends JFrame implements ActionListener {
            }
        } else if (e.getSource() == button2) {
            if (!isTimerRunning){
-               text.setText("");
+
                isTimerRunning = true;
                button2.setText("Stop");
                timer.start();
+
            } else {
                text.setText("");
                isTimerRunning = false;
